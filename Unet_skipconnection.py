@@ -209,12 +209,6 @@ def PreActResNet152():
     return PreActResNet(PreActBottleneck, [3, 8, 36, 3])
 
 
-if __name__ == '__main__':
-    with torch.no_grad():
-
-        net = PreActResNet50()
-        y = net((torch.randn(1, 3, 512, 512)))
-        print(y.size())
 
 
 
